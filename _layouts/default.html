@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="icon" type="image/png" href="{{ "/assets/img/favicon.png" | prepend: site.baseurl }}" />
   {% include head.html %}
   <body>
       {% include header.html %}
-      <section id="about">
-        {% include about.html %}
-      </section>
-      <section id="projects">
-        {% include projects.html %}
-      </section>
+      
+      {% include experiences.html %}
+      
+      {% include educations.html %}
+
+      {% include about.html %}
+
         {{ content }}
+
       {% include footer.html %}
   </body>

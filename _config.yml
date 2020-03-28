@@ -1,17 +1,15 @@
 # Site settings
-title: A blog about lorem ipsum dolor sit amet
-description: A blog about lorem ipsum dolor sit amet
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+title: Clément Changeur
+description: French cyberSecurity engineer website
+baseurl: "" # "/blog" the subpath of your site, e.g. /blog/
+# url: "http://localhost:3000" # the base hostname & protocol for your site
 
 # User settings
-username: Anon Developer
-user_description: Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS.
-user_title: Software Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
+username: Clément Changeur
+user_description: Versatile french engineer in cybersecurity, passionate about technological achievement and novelty
+user_title: CyberSecurity Engineer
+email: clement@changeur.me
+github_username: cchangeur
 
 # Google-analytics
 google-analytics:

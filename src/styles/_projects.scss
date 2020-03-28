@@ -1,7 +1,7 @@
 #projects {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  //justify-content: space-between;
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
@@ -29,6 +29,37 @@
   }
 }
 
+.user-presentation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  h5 {
+    margin: 0;
+  }
+  h3 {
+    margin-bottom: 0;
+  }
+  li {
+    color: $main; 
+    font-size: 1.1rem;
+  }
+  p {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: $cut) {
+  .user-presentation {
+  flex-direction: column;
+  }
+}
+
 .contents {
   @media only screen and (min-width: $cut) {
     margin-left: 0;
@@ -37,13 +68,56 @@
 }
 
 .contents-right {
+  flex: 70%;
+  margin-left: 5%;
   @media only screen and (min-width: $cut) {
-    float: right;
-    margin-top: -5%;
+    //margin-top: -5%;
+    width: 48%;
+  }  
+  h3 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+.images-left {
+  flex: 25%;
+  @media only screen and (min-width: $cut) {
+    /*float: left;*/
+    width: 48%;
+  }
+  img {
+    @media only screen and (min-width: $cut) {
+     /* float: left;*/
+    }
+  }
+}
+
+.contents-left {
+  flex: 50%;
+  margin-right: 5%;
+  @media only screen and (min-width: $cut) {
+    //margin-top: -5%;
     width: 48%;
   }
 }
+
 .images-right {
+  margin-top: 5%;
+  flex: 45%;
+  @media only screen and (min-width: $cut) {
+    /*float: right;*/
+    width: 48%;
+  }
+  img {
+    @media only screen and (min-width: $cut) {
+     /* float: right;*/
+    }
+  }
+}
+
+
+/*.images-right {
   @media only screen and (min-width: $cut) {
     float: right;
     width: 48%;
@@ -55,17 +129,15 @@
   }
 }
 
-.images-left {
+.contents-left {
   @media only screen and (min-width: $cut) {
     float: left;
+    margin-top: -5%;
     width: 48%;
   }
-  img {
-    @media only screen and (min-width: $cut) {
-      float: left;
-    }
-  }
 }
+
+}*/
 
 .project-link {
   display: inline-block;
@@ -97,5 +169,52 @@
     transition: color 0.3s ease-in,
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;
+  }
+}
+
+
+.user-experiences {
+  border: 2px solid black; 
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius: 5px; */
+  }
+  h5 {
+    margin: 0;
+  }
+  li {
+    color: $main;
+    font-size: 1.1rem;
+  }
+  p {
+    margin-right: 5px;
+  }
+}
+
+.images-top {
+  flex: 40%;
+  background-color: #FFF;
+  @media only screen and (min-width: $cut) {
+    width: 48%;
+  }
+  img {
+    @media only screen and (min-width: $cut) {
+      width: 48%;
+      text-align: center;
+      display: block;
+      margin: auto;
+    }
+  }
+}
+.contents-bottom {
+  padding-left:5px;
+  flex: 60%;
+  background-color: #f1f1f1;
+  @media only screen and (min-width: $cut) {
+    width: 48%;
   }
 }
