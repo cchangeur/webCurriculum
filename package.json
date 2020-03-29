@@ -1,12 +1,12 @@
 {
-  "name": "particle",
-  "version": "1.0.0",
+  "name": "webCurriculum",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "gulp"
   },
-  "author": "Nathan Randecker",
+  "author": "Clement Changeur",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.26.7",

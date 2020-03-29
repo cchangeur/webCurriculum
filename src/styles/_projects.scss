@@ -77,6 +77,10 @@
   h3 {
     margin-top: 0;
     padding-top: 0;
+    /* Little screen : add space */
+    @media only screen and (max-width: $cut) {
+      margin-top: 5%;
+  } 
   }
 }
 
