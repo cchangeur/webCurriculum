@@ -13,6 +13,6 @@ github_username: cchangeur
 
 # Google-analytics
 google-analytics:
-  id: ""
+  id: "UA-162151508-2"
 
 exclude: ['package.json', 'src' , 'node_modules']
