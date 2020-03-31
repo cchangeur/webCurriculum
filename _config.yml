@@ -6,7 +6,7 @@ baseurl: "" # "/blog" the subpath of your site, e.g. /blog/
 
 # User settings
 username: Clément Changeur
-user_description: Versatile french engineer in cybersecurity, passionate about technological achievement and novelty
+user_description: Versatile french engineer in cybersecurity, technology enthusiast, passionate about high tech achievement and novelty
 user_title: CyberSecurity Engineer
 email: clement@changeur.me
 github_username: cchangeur
