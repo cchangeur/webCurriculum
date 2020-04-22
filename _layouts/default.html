@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="icon" type="image/png" href="{{ "/assets/img/favicon.png" | prepend: site.baseurl }}" />
+
+  <div class="loader" id="loading">
+    <span class="emot"></span>
+  </div>
+
   {% include head.html %}
   <body>
+
       {% include header.html %}
       
       {% include experiences.html %}
@@ -12,4 +18,10 @@
       {% include about.html %}
 
       {% include footer.html %}
+
   </body>
+ <script> 
+ Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
+    document.getElementById("loading").style.visibility = "hidden"; 
+});
+ </script>

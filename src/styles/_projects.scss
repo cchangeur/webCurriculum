@@ -222,3 +222,39 @@
     width: 48%;
   }
 }
+
+
+
+.loader {
+  text-align: center;
+  font-size: 8rem;
+  padding-top: calc(50vh - 8rem/2);
+  position : fixed;
+  z-index: 9999;
+  background-color : aliceblue;
+  top : 0px;
+  left : 0px;
+  height : 100%;
+  width : 100%;
+  cursor : wait;
+}
+
+@keyframes emot-dance {
+  from, 49% { transform-origin: -50% 100%; }
+  50%, 75%, to { transform-origin: 150% 100%; }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(10deg); }
+}
+
+.emot {
+  animation: emot-dance .8s infinite alternate ease-in-out;
+}
+
+.emot {
+  display: inline-block;
+}
+
+.emot:empty::before {
+  content: "\01F608";
+}
