@@ -121,28 +121,6 @@
 }
 
 
-/*.images-right {
-  @media only screen and (min-width: $cut) {
-    float: right;
-    width: 48%;
-  }
-  img {
-    @media only screen and (min-width: $cut) {
-      float: right;
-    }
-  }
-}
-
-.contents-left {
-  @media only screen and (min-width: $cut) {
-    float: left;
-    margin-top: -5%;
-    width: 48%;
-  }
-}
-
-}*/
-
 .project-link {
   display: inline-block;
   margin: 10px 0px;
@@ -175,7 +153,6 @@
                 border-color 0.3s ease-in;
   }
 }
-
 
 .user-experiences {
   border: 2px solid black; 
@@ -223,15 +200,13 @@
   }
 }
 
-
-
 .loader {
   text-align: center;
   font-size: 8rem;
   padding-top: calc(50vh - 8rem/2);
   position : fixed;
   z-index: 9999;
-  background-color : aliceblue;
+  background-color : $main;
   top : 0px;
   left : 0px;
   height : 100%;

@@ -1,4 +1,4 @@
-<footer class="footer" >
+<footer class="footer">
     <a class="up" href="#top" data-scroll><i class="icon fa fa-chevron-up" aria-hidden="true"></i></a>
     <p>&copy; {{site.username}} &#129497;</p>
     <p>Thanks to <a href="https://github.com/nrandecker">Nathan Randecker</a> for the template</p>
@@ -7,4 +7,9 @@
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="/assets/js/sweet-scroll.min.js"></script>
 <script src="/assets/js/main.js"></script>
+<script>
+    Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
+        document.getElementById("loading").style.visibility = "hidden";
+    });
+</script>
 {% include google-analytics.html %}
