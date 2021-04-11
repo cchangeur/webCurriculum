@@ -1,8 +1,7 @@
 # Site settings
 title: Clément Changeur
 description: French cyberSecurity engineer website
-baseurl: "" # "/blog" the subpath of your site, e.g. /blog/
-# url: "http://localhost:3000" # the base hostname & protocol for your site
+baseurl: ""
 
 # User settings
 username: Clément Changeur
@@ -10,9 +9,5 @@ user_description: Versatile french engineer in cybersecurity, technology enthusi
 user_title: CyberSecurity Engineer
 email: clement@changeur.me
 github_username: cchangeur
-
-# Google-analytics
-google-analytics:
-  id: "UA-162151508-1"
 
 exclude: ['package.json', 'src' , 'node_modules']
